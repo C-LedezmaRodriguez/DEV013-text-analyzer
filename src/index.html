@@ -14,16 +14,22 @@
   </header>
   <main>
     <div class="ingresarTexto">
-      <textarea 
-      name="texto" 
-      value="user-input" 
-      cols="30" 
-      rows="10" 
-      placeholder="Escribe tu texto aqui">
-      </textarea><br>
-      <input id="buttonreset" type="reset" value="Limpiar métricas">
+      <div class="list">
+        <ul>
+          <li class="lista" data-testid="word-count">Word-count</li>
+          <li class="lista" data-testid="character-count">Character-count</li>
+          <li class="lista" data-testid="character-no-spaces-count">Character-no-spaces-count</li>
+          <li class="lista" data-testid="number-count">Number-count</li>
+          <li class="lista" data-testid="number-sum">Number-sum</li>
+          <li class="lista" data-testid="word-length-average">Word-length-average</li>
+        </ul>
+      </div>
+      <form action="">
+        <textarea name="user-input" cols="30" rows="10" placeholder="Escribe tu texto aqui"></textarea><br>
+        <button type="reset" id="reset-button"><strong>Limpiar</strong></button>
+      </form>
     </div>
   </main>
-<footer></footer>
+<footer><p>By Camila Ledezma</p></footer>
 </body>
 </html>
